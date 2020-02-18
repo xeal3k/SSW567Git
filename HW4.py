@@ -8,13 +8,8 @@ import requests
 import json
 
 
-# In[74]:
+# In[76]:
 
-
-def main():
-    user_name = input("Input User Name: ")
-    result = git(user_name)
-    return result
 
 def git(user_name):
     r = requests.get("https://api.github.com/users/" + user_name + "/repos")
@@ -45,10 +40,10 @@ def git(user_name):
     return repo
 
 
-# In[75]:
+# In[78]:
 
 
-main()
+
 
 
 # In[38]:
